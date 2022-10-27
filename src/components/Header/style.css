@@ -1,0 +1,8 @@
+.divHeader{
+  display: flex;
+  width: 50%;
+  height: 10%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 2px #EBEEF0;
+}

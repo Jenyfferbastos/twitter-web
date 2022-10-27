@@ -1,0 +1,10 @@
+.divProfile{
+  display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    font-size: 12px;
+    margin-top: 180px;
+}
+.userProfile{
+  display: flex;
+  flex-direction: column;
+}
