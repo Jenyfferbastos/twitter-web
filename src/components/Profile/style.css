@@ -1,10 +1,20 @@
-.divProfile{
+.divProfile {
   display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    font-size: 12px;
-    margin-top: 180px;
+  grid-template-columns: 1fr 2fr 1fr;
+  font-size: 16px;
+  margin-top: 100px;
+  align-items: center;
 }
-.userProfile{
+.userProfile {
   display: flex;
   flex-direction: column;
+}
+.imgProfile {
+  width: 55px;
+}
+.textName {
+  font-weight: 600;
+}
+.textUser {
+  color: #5b7083;
 }

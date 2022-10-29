@@ -5,6 +5,7 @@ import { clsx } from 'clsx';
 export interface ButtonPrimaryProps {
   children: ReactNode;
   asChild?: boolean;
+  size: string;
 }
 
 export function ButtonPrimary({ children, asChild }: ButtonPrimaryProps){

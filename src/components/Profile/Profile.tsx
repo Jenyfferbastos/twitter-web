@@ -17,10 +17,10 @@ export interface ProfileProps {
 export function Profile({ avatar, icon, textName, textUser }: ProfileProps) {
   return (
     <div className='divProfile'>
-      <img src={icons[avatar]} />
+      <img className='imgProfile' src={icons[avatar]} />
       <div className='userProfile'>
-      <p>{textName}</p>
-      <p>{textUser}</p>
+      <p className='textName'>{textName}</p>
+      <p className='textUser'>{textUser}</p>
       </div>
       <img src={icons[icon]}/>
       </div>

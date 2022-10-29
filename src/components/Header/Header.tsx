@@ -7,11 +7,13 @@ export interface HeaderProps {
 }
 export function Header({ title }: HeaderProps) {
   return (
+    <>
     <div className="divHeader">
-      <p>{ title }</p>
+      <h1 className="titleHome">{ title }</h1>
       <button>
         <img src={IconButtonHeader}></img>
       </button>
     </div>
+    </>
   );
 }

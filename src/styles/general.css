@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-div{
-  display:flex;
+.divApp{
+display: grid;
+grid-template-columns: 1fr 3fr 2fr;
+}
+.divFeed{
+display: flex;
+flex-direction: column;
+border: solid 1.5px #EBEEF0;
 }

@@ -1,0 +1,9 @@
+.buttonMedium{
+  background: rgba(29, 161, 242, 1);
+  color: white;
+  opacity: 50%;
+  border-radius: 20px;
+  width: 77px;
+  height: 38px;
+  padding: 15px, 93px;
+}

@@ -1,7 +1,7 @@
 import './style.css'
 import { ButtonSideMenu } from "../buttons/ButtonSideMenu/ButtonSideMenu";
 import { ButtonPrimary } from "../buttons/ButtonPrimary/ButtonPrimary";
-import { Profile } from "../profile/Profile";
+import { Profile } from "../Profile/Profile";
 
 export function SideMenu() {
   return (
@@ -16,7 +16,7 @@ export function SideMenu() {
       <ButtonSideMenu cor="" icon="profile" text="Profile" />
       <ButtonSideMenu cor="" icon="more" text="More" />
 
-      <ButtonPrimary children="Tweet" />
+      <ButtonPrimary size="medium" children="Tweet" />
 
       <Profile
         avatar="avatar"
