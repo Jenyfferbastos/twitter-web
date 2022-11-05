@@ -1,0 +1,17 @@
+.divSearchBar{
+  display: flex;
+  height: 35px;
+  width: 70%;
+  margin: 10px 0px 10px 30px;
+  background: #EBEEF0;
+  border-radius: 30px;
+}
+.imgLupaSearch{
+margin-left: 30px;
+width: 5%;
+}
+.inputSearch{
+  outline: none;
+  color: #5B7083;
+  background: #EBEEF0;
+}

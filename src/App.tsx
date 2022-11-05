@@ -2,7 +2,9 @@ import "./styles/general.css";
 import { SideMenu } from "./components/SideMenu/SideMenu";
 import { Header } from "./components/Header/Header";
 import { Post } from "./components/Post/Post";
-import { Tweet } from "./components/Tweet/Tweet"
+import { Tweet } from "./components/Tweet/Tweet";
+import { SearchBar } from "./components/SearchBar/SearchBar";
+import { News } from "./components/News/News";
 
 export function App() {
   return (
@@ -11,7 +13,10 @@ export function App() {
       <div className="divFeed">
         <Header title="Home" />
         <Post />
-        {/* <Tweet text="0" nome="teste" user="biscuttu" tempoPostagem="0" textPost="Hold on I need at least a few minutes!" /> */}
+      </div>
+      <div>
+      <SearchBar />
+      <News />
       </div>
     </div>
   );

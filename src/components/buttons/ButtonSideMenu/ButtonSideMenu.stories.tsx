@@ -6,7 +6,7 @@ export default {
   component: ButtonSideMenu,
   args: {
     icon: 'home',
-    cor: 'white',
+    color: 'white',
     text: 'Home'
   },
   argTypes: {

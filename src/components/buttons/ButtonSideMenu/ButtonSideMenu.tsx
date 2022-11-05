@@ -22,14 +22,14 @@ const icons = {
 export interface ButtonSideMenuProps {
   icon: string;
   text: string;
-  cor: string;
+  color: string;
 }
-export function ButtonSideMenu({ icon, text, cor }: ButtonSideMenuProps) {
+export function ButtonSideMenu({ icon, text, color }: ButtonSideMenuProps) {
   return (
     <>
     <div className="Button">
       <img src={icons[icon]} />
-      <button className={cor}>{text}</button>
+      <button className={color}>{text}</button>
       </div>
     </>
   );

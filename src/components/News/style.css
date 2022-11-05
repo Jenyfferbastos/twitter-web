@@ -1,0 +1,32 @@
+.divNews{
+  display: flex;
+  flex-direction: column;
+  background: #F7F9FA;
+  border-radius: 20px;
+  margin: 25px;
+}
+.titleNews{
+  font-weight: 600;
+  font-size: 18px;
+}
+.news{
+  border-bottom: solid 1px #EBEEF0;
+  display: grid;
+
+}
+.textNews{
+  font-size: 15px;
+  font-weight: 600;
+}
+.informNews{
+  font-size: 14px;
+  color: #5B7083;
+}
+.hastagNews{
+  font-size: 14px;
+  color: #1DA1F2;
+}
+.new{
+  display: grid;
+  flex-direction: column;
+}
