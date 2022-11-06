@@ -1,19 +1,26 @@
-.divNews{
+.divNewsMain{
   display: flex;
   flex-direction: column;
   background: #F7F9FA;
   border-radius: 20px;
-  margin: 25px;
+  margin: 20px;
 }
 .titleNews{
   font-weight: 600;
   font-size: 18px;
 }
-.news{
+.containerNews{
+  display: flex;
   border-bottom: solid 1px #EBEEF0;
-  display: grid;
-
 }
+.imgNews{
+  width: 100px;
+  margin-top: 20px;
+}
+.news{
+  display: grid;
+}
+
 .textNews{
   font-size: 15px;
   font-weight: 600;

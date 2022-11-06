@@ -1,16 +1,28 @@
-import { iconsCommonTheme } from "../Icons/CommonTheme";
-import { iconsLightTheme } from "../Icons/LightTheme/index";
-import { iconsDarkTheme } from "../Icons/DarkTheme/index";
+import { iconsCommonTheme } from "./CommonTheme";
+import { iconsLightTheme } from "./LightTheme/index";
+import { iconsDarkTheme } from "./DarkTheme/index";
 
-export interface ButtonSideMenuProps {
+export interface DynamicIconProps {
   icon: string;
+  theme?: string;
 }
-export function ButtonSideMenu({ icon }: ButtonSideMenuProps) {
+export function DynamicIcon({ icon, theme }: DynamicIconProps) {
+  console.log(defineIcon(icon, theme));
   return (
     <>
-      <img src={iconsCommonTheme[icon]} />
+      <img src={defineIcon(icon, theme)} />
     </>
   );
 }
 
+function defineIcon(icon: string, theme?: string) {
+  if (theme) {
+    if (theme === "dark") {
+      return iconsDarkTheme[icon];
+    } else if (theme === "light") {
+      return iconsLightTheme[icon];
+    }
+  }
+  return iconsCommonTheme[icon];
+}
 

@@ -1,7 +1,7 @@
 import CommonThemeBackArrowDefault from "../../../assets/img/CommonTheme/CommonThemeBackArrowDefault.svg"
 import CommonThemeEmojiDefault from "../../../assets/img/CommonTheme/CommonThemeEmojiDefault.svg"
 import CommonThemeGIFDefault from "../../../assets/img/CommonTheme/CommonThemeGIFDefault.svg"
-import CommonThemeLikeDefault from "../../../assets/img/CommonTheme/CommonThemeLikeDefault.svg"
+import CommonThemeLikeSelected from "../../../assets/img/CommonTheme/CommonThemeLikeSelected.svg"
 import CommonThemeLocationDefault from "../../../assets/img/CommonTheme/CommonThemeLocationDefault.svg"
 import CommonThemeMediaDefault from "../../../assets/img/CommonTheme/CommonThemeMediaDefault.svg"
 import CommonThemePollDefault from "../../../assets/img/CommonTheme/CommonThemePollDefault.svg"
@@ -13,7 +13,7 @@ export const iconsCommonTheme = {
   ['BackArrowDefault']: CommonThemeBackArrowDefault,
   ['EmojiDefault']: CommonThemeEmojiDefault,
   ['GIFDefault']: CommonThemeGIFDefault,
-  ['LikeDefault']: CommonThemeLikeDefault,
+  ['LikeDefault']: CommonThemeLikeSelected,
   ['LocationDefault']: CommonThemeLocationDefault,
   ['MediaDefault']: CommonThemeMediaDefault,
   ['PollDefault']: CommonThemePollDefault,
