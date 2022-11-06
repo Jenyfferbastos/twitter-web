@@ -13,6 +13,11 @@ export function App() {
       <div className="divFeed">
         <Header title="Home" />
         <Post />
+        <div className="divTweetMain">
+        <Tweet />
+        <Tweet />
+        <Tweet />
+        </div>
       </div>
       <div>
       <SearchBar />
