@@ -1,11 +1,7 @@
 import "./style.css";
-import AvatarSmall from "../../assets/img/AvatarSmall.svg";
 import { ButtonPrimaryMedium } from "../buttons/ButtonPrimaryMedium/ButtonPrimaryMedium";
-import IconImage from "../../assets/img/IconImage.svg";
-import IconGif from "../../assets/img/IconGif.svg";
-import IconEnquete from "../../assets/img/IconEnquete.svg";
-import IconEmoji from "../../assets/img/IconEmoji.svg";
-import iconProgramar from "../../assets/img/IconProgramar.svg";
+import { DynamicIcon } from "../Icons/Icons"
+import AvatarSmall from "../../assets/img/AvatarSmall.svg"
 
 export function Post() {
   return (
@@ -22,19 +18,19 @@ export function Post() {
       <div className="buttonsPost">
         <div>
           <button>
-            <img src={IconImage}></img>
+            <DynamicIcon icon="MediaDefault" theme="common" />
           </button>
           <button>
-            <img src={IconGif}></img>
+            <DynamicIcon icon="GIFDefault" theme="common" />
           </button>
           <button>
-            <img src={IconEnquete}></img>
+            <DynamicIcon icon="PollDefault" theme="common" />
           </button>
           <button>
-            <img src={IconEmoji}></img>
+            <DynamicIcon icon="EmojiDefault" theme="common" />
           </button>
           <button>
-            <img src={iconProgramar}></img>
+            <DynamicIcon icon="ScheduleDefault" theme="common" />
           </button>
         </div>
         <ButtonPrimaryMedium text="Tweet"></ButtonPrimaryMedium>

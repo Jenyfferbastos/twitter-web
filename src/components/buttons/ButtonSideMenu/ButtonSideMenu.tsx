@@ -1,35 +1,66 @@
 import "./style.css";
-import iconHome from "../../../assets/img/IconHome.svg";
-import iconExplore from "../../../assets/img/IconExplore.svg"
-import iconNotifications from "../../../assets/img/IconNotifications.svg"
-import iconMessages from "../../../assets/img/IconMessages.svg"
-import iconBookmarks from "../../../assets/img/IconBookmarks.svg"
-import iconLists from "../../../assets/img/IconLists.svg"
-import iconProfile from "../../../assets/img/IconProfile.svg"
-import iconMore from "../../../assets/img/IconMore.svg"
-
-const icons = {
-  ['home']: iconHome,
-  ['explore']: iconExplore,
-  ['notifications']: iconNotifications,
-  ['messages']: iconMessages,
-  ['bookmarks']: iconBookmarks,
-  ['lists']: iconLists,
-  ['profile']: iconProfile,
-  ['more']: iconMore,
-}
+import { DynamicIcon } from "../../Icons/Icons";
 
 export interface ButtonSideMenuProps {
-  icon: string;
-  text: string;
-  color: string;
+
 }
-export function ButtonSideMenu({ icon, text, color }: ButtonSideMenuProps) {
+export function ButtonSideMenu({  }: ButtonSideMenuProps) {
   return (
     <>
-    <div className="Button">
-      <img src={icons[icon]} />
-      <button className={color}>{text}</button>
+      <div className="Button">
+      <button className="buttonSideMenu">
+          <DynamicIcon icon="HomeDefault" theme="light" />
+          Home
+        </button>
+      </div>
+
+      <div className="Button">
+        <button className="buttonSideMenu">
+          <DynamicIcon icon="ExploreDefault" theme="light" />
+          Explore
+        </button>
+      </div>
+
+      <div className="Button">
+        <button className="buttonSideMenu">
+          <DynamicIcon icon="NotificationsDefault" theme="light" />
+          Notifications
+        </button>
+      </div>
+
+      <div className="Button">
+        <button className="buttonSideMenu">
+          <DynamicIcon icon="MessagesDefault" theme="light" />
+          Messages
+        </button>
+      </div>
+
+      <div className="Button">
+        <button className="buttonSideMenu">
+          <DynamicIcon icon="BookmarksDefault" theme="light" />
+          Bookmarks
+        </button>
+      </div>
+
+      <div className="Button">
+        <button className="buttonSideMenu">
+          <DynamicIcon icon="ListsDefault" theme="light" />
+          Lists
+        </button>
+      </div>
+
+      <div className="Button">
+        <button className="buttonSideMenu">
+          <DynamicIcon icon="ProfileDefault" theme="light" />
+          Profile
+        </button>
+      </div>
+
+      <div className="Button">
+        <button className="buttonSideMenu">
+          <DynamicIcon icon="MoreDefault" theme="light" />
+          More
+        </button>
       </div>
     </>
   );

@@ -16,8 +16,10 @@ export function News() {
                 England’s Chief Medical Officer says the UK is at the most
                 dangerous time of the pandemic
               </p>
+              <div className="divTopic">
               <p className="informNews">Trending with</p>
               <p className="hastagNews">#covid19</p>
+              </div>
             </div>
           </div>
         </div>
@@ -34,8 +36,10 @@ export function News() {
               Parler may go offline following suspensions by Amazon, Apple and
               Google
             </p>
+            <div className="divTopic">
             <p className="informNews">Trending with</p>
             <p className="hastagNews">#trump</p>
+            </div>
           </div>
         </div>
         <div className="divImgNews">
@@ -51,8 +55,10 @@ export function News() {
               India vs Australia: India hold on to earn a draw on Day 5 in
               Sydney Test
             </p>
+            <div className="divTopic">
             <p className="informNews">Trending with</p>
             <p className="hastagNews">#sport</p>
+            </div>
           </div>
         </div>
         <div className="divImgNews">
@@ -60,7 +66,7 @@ export function News() {
         </div>
       </div>
 
-      <a>Show more</a>
+      <a className="showMoreNews">Show more</a>
     </div>
   );
 }

@@ -1,0 +1,40 @@
+.divFollowMain {
+  font-weight: 600;
+  background-color: #f7f9fa;
+  width: 91%;
+  height: 21%;
+  border-radius: 15px;
+  margin-left: 20px;
+}
+.titleFollow {
+  font-size: 16px;
+  margin: 10px;
+  border-bottom: solid 2px #ebeef0;
+}
+.profileFollow {
+  font-size: 14px;
+  display: grid;
+  height: 50px;
+  align-items: center;
+  grid-template-columns: 1fr 2fr 1fr;
+  border-bottom: solid 2px #ebeef0;
+}
+.imgProfileFollow {
+  width: 40%;
+  margin-left: 25px;
+}
+.userProfile {
+  color: #5b7083;
+}
+.buttonFollow {
+  color: #1da1f2;
+  border: solid 1px #1da1f2;
+  border-radius: 20px;
+  width: 85px;
+  height: 30px;
+}
+.showMoreFollow {
+  color: #1da1f2;
+  margin-left: 20px;
+  font-size: 13px;
+}

@@ -1,11 +1,11 @@
-import './style.css';
-import IconSearchBar from '../../assets/img/IconSearchBar.svg';
+import "./style.css";
+import { DynamicIcon } from "../Icons/Icons";
 
-export function SearchBar(){
-  return(
-     <div className='divSearchBar'>
-      <img className='imgLupaSearch' src={ IconSearchBar }></img>
-      <input className='inputSearch' type="text" placeholder='Search Twitter'/>
-     </div>
-  )
+export function SearchBar() {
+  return (
+    <div className="divSearchBar">
+      <DynamicIcon icon="SearchDefault" theme="common" />
+      <input className="inputSearch" type="text" placeholder="Search Twitter" />
+    </div>
+  );
 }

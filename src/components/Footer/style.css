@@ -1,0 +1,40 @@
+.footerTwitter {
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  width: 100%;
+  background-color: #1da1f2;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.textsFooter {
+  color: white;
+}
+.titleFooter {
+  font-weight: 600;
+  font-size: 18px;
+}
+.textFooter{
+  font-size: 13px;
+}
+.buttonsFooter{
+  margin-right: -300px;
+}
+.buttonLogIn {
+  color: white;
+  border-radius: 20px;
+  border: solid 1px white;
+  width: 70px;
+  height: 30px;
+  font-size: 12px;
+
+}
+.buttonSignUp {
+  color: black;
+  background-color: #f7f9fa;
+  border-radius: 20px;
+  width: 70px;
+  height: 30px;
+  font-size: 12px;
+  margin-left: 10px;
+}
