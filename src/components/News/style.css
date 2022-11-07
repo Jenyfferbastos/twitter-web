@@ -1,56 +1,74 @@
-.divNewsMain{
+.news-container {
   display: flex;
   flex-direction: column;
-  background: #F7F9FA;
   border-radius: 20px;
   margin: 10px 20px;
   height: 55%;
 }
-.divTextNews{
-  margin: 5px;
+.news-container-light {
+  background: var(--dark-8);
 }
-.titleNews{
+.news-container-dark {
+  background: var(--dark-2);
+}
+.news-title {
   font-weight: 600;
   font-size: 16px;
-  border-bottom: solid 2px #EBEEF0;
+  border-bottom: solid 2px #ebeef0;
   margin: 10px;
 }
-.containerNews{
+.news-title-light {
+  color: var(--black);
+}
+.news-title-dark {
+  color: var(--white);
+}
+.new-text {
+  margin: 5px;
+}
+.new-container{
   display: grid;
   grid-template-columns: 5fr 1fr;
-  border-bottom: solid 2px #EBEEF0;
+  border-bottom: solid 2px #ebeef0;
   margin-right: 20px;
 }
-.imgNews{
+.new-img {
   width: 300px;
   margin-top: 20px;
 }
-.news{
+.grid {
   display: grid;
 }
 
-.textNews{
+.news-text {
   font-size: 14px;
   font-weight: 600;
   width: 80%;
 }
-.divTopic{
+.news-text-dark {
+  color: var(--white);
+}
+.news-text-light {
+  color: var(--dark);
+}
+.flex {
   display: flex;
 }
-.informNews{
+.news-font {
   font-size: 13px;
-  color: #5B7083;
 }
-.hastagNews{
+.news-color-dark {
+  color: var(--dark-6);
+}
+.news-color-light {
+  color: var(--dark-5);
+}
+.new-hastag{
   font-size: 13px;
-  color: #1DA1F2;
+  color: var(--primary-blue);
 }
-.new{
-  display: grid;
-  flex-direction: column;
-}
-.showMoreNews{
-  color: #1DA1F2;
+.news-show-more {
+  color: var(--primary-blue);
   margin: 10px;
   font-weight: 600;
   font-size: 13px;

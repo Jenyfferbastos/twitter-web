@@ -1,17 +1,28 @@
-.divFollowMain {
+.follow {
   font-weight: 600;
-  background-color: #f7f9fa;
   width: 91%;
   height: 21%;
   border-radius: 15px;
   margin-left: 20px;
 }
-.titleFollow {
+.follow-light{
+  background-color: var(--dark-8);
+}
+.follow-dark{
+  background-color: var(--dark-2);
+}
+.follow-title {
   font-size: 16px;
   margin: 10px;
   border-bottom: solid 2px #ebeef0;
 }
-.profileFollow {
+.follow-title-light {
+  color: var(--black);
+}
+.follow-title-dark{
+  color: var(--white);
+}
+.follow-profile{
   font-size: 14px;
   display: grid;
   height: 50px;
@@ -19,13 +30,23 @@
   grid-template-columns: 1fr 2fr 1fr;
   border-bottom: solid 2px #ebeef0;
 }
-.imgProfileFollow {
+.follow-img-profile {
   width: 40%;
   margin-left: 25px;
 }
-.userProfile {
-  color: #5b7083;
+.follow-name-light{
+  color: var(--black);
+} 
+.follow-name-dark{
+  color: var(--white);
 }
+.follow-user-light{
+  color: var(--dark-5);
+} 
+.follow-user-dark{
+  color: var(--dark-6);
+}
+
 .buttonFollow {
   color: #1da1f2;
   border: solid 1px #1da1f2;

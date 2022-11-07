@@ -1,17 +1,25 @@
-.divSearchBar{
+.search-bar{
   display: flex;
   height: 35px;
   width: 70%;
   margin: 10px 0px 10px 30px;
-  background: #EBEEF0;
   border-radius: 30px;
 }
-.imgLupaSearch{
-margin-left: 30px;
-width: 5%;
+.search-bar-light{
+  background: var(--dark-7)
+} 
+.search-bar-dark{
+  background: var(--dark-3)
 }
-.inputSearch{
+
+.search-input{
   outline: none;
-  color: #5B7083;
-  background: #EBEEF0;
+}
+.search-input-light{
+  color: var(--dark-5);
+  background: var(--dark-7);
+}
+.search-input-dark{
+  color: var(--dark-6);
+  background: var(--dark-3);
 }

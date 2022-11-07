@@ -1,20 +1,30 @@
-.divProfile {
+.profile {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   font-size: 16px;
   margin-top: 100px;
   align-items: center;
 }
-.userProfile {
+.profile-img {
+  width: 55px;
+}
+.profile-information-user {
   display: flex;
   flex-direction: column;
 }
-.imgProfile {
-  width: 55px;
-}
-.textName {
+.profile-weight {
   font-weight: 600;
 }
-.textUser {
-  color: #5b7083;
+.profile-name-light {
+  color: var(--dark);
+}
+.profile-name-dark {
+  color: var(--white);
+}
+.profile-user-light {
+  color: var(--dark-5);
+}
+
+.profile-user-dark {
+  color: var(--dark-6);
 }

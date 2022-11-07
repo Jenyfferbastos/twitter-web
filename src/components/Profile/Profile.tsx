@@ -9,11 +9,11 @@ export interface ProfileProps {
 }
 export function Profile({ textName, textUser }: ProfileProps) {
   return (
-    <div className='divProfile'>
-      <img className='imgProfile' src={ AvatarSmall } />
-      <div className='userProfile'>
-      <p className='textName'>{textName}</p>
-      <p className='textUser'>{textUser}</p>
+    <div className='profile'>
+      <img className='profile-img' src={ AvatarSmall } />
+      <div className='profile-information-user'>
+      <p className='profile-weight profile-name-light profile-name-dark'>{textName}</p>
+      <p className='profile-user-light profile-user-dark'>{textUser}</p>
       </div>
       <DynamicIcon icon="EllipsesDefault" theme="light" />
       </div>

@@ -8,8 +8,8 @@ export interface HeaderProps {
 export function Header({ title }: HeaderProps) {
   return (
     <>
-    <div className="divHeader">
-      <h1 className="titleHome">{ title }</h1>
+    <div className="header header-light header-dark">
+      <h1 className="header-title">{ title }</h1>
       <button>
       <DynamicIcon icon="TopTweetDefault" theme="common" />
       </button>

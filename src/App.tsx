@@ -17,7 +17,7 @@ export function App() {
         <div className="divFeed">
           <Header title="Home" />
           <Post />
-          <div className="divTweetMain">
+          <div className="TweetMain">
             <Tweet />
             <Tweet />
             <Tweet />

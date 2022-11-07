@@ -1,11 +1,17 @@
-.divHeader{
+.header{
   display: flex;
   height: 50px;
   justify-content: space-between;
   align-items: center;
-  border-bottom: solid 1.5px #EBEEF0;
+  border-bottom: solid 1.5px var(--dark-7);
   font-weight: 600;
 }
-.titleHome{
+.header-light{
+  color: var(--black);
+}
+.header-dark{
+  color: var(--white);
+}
+.header-title{
   margin-left: 15px;
 }
