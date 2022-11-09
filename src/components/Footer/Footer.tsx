@@ -1,6 +1,8 @@
 import "./style.css"
 
-export function Footer(){
+export interface FooterProps {}
+
+export function Footer({}:FooterProps){
   return(
     <div className="footerTwitter">
       <div className="textsFooter">

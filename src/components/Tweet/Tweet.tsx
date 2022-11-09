@@ -3,50 +3,55 @@ import AvatarMedium from "../../assets/img/AvatarSmall.svg";
 import ImageFeed from "../../assets/img/ImageFeed.svg";
 import { DynamicIcon } from "../Icons/Icons";
 
-export function Tweet() {
+export interface ITweetProps {
+  theme: string;
+}
+
+export function Tweet({ theme }: ITweetProps) {
+  const classTweetName = `tweet-name-${theme}`;
+  const classTweetUser = `tweet-user-${theme}`;
+  const classTempPost = `tweet-temp-post-${theme}`;
+  const classTweetTextPost = `tweet-text-post-${theme}`;
+  const classTweetButton = `tweet-button tweet-button-${theme}`;
+
   return (
-    <div className="tweet">
+    <div className="tweet tweet-light tweet-dark">
       <div className="tweet-profile">
         <img className="tweet-img-avatar" src={AvatarMedium}></img>
         <div>
           <div className="tweet-information-user">
-            <h2 className="tweet-name-light tweet-name-dark">Davide Biscuso</h2>
-            <h2 className="tweet-user-light tweet-user-dark">@biscuttu</h2>
-            <p className="tweet-temp-post-light tweet-temp-post-dark">23s</p>
+            <h2 className={classTweetName}>Davide Biscuso</h2>
+            <h2 className={classTweetUser}>@biscuttu</h2>
+            <p className={classTempPost}>23s</p>
           </div>
-          <p className="tweet-text-post-light tweet-text-post-dark">
-            Tom is in a big hurry.
-          </p>
+          <p className={classTweetTextPost}>Tom is in a big hurry.</p>
         </div>
       </div>
       <img className="tweet-img-post" src={ImageFeed} />
 
       <div className="tweet-buttons">
-
-        <button className="tweet-button tweet-button-light tweet-button-dark">
-          <DynamicIcon icon="CommentDefault" theme="light" />
+        <button className={classTweetButton}>
+          <DynamicIcon icon="CommentDefault" theme={theme} />
           61
         </button>
 
-        <button className="tweet-button tweet-button-light tweet-button-dark">
-          <DynamicIcon icon="RetweetDefault" theme="light" />
+        <button className={classTweetButton}>
+          <DynamicIcon icon="RetweetDefault" theme={theme} />
           12
         </button>
 
-        <button className="tweet-button tweet-button-light tweet-button-dark">
-          <DynamicIcon icon="LikeDefault" theme="light" />
+        <button className={classTweetButton}>
+          <DynamicIcon icon="LikeDefault" theme={theme} />
           6.2K
         </button>
 
-        <button className="tweet-button tweet-button-light tweet-button-dark">
-          <DynamicIcon icon="ShareDefault" theme="light" />
+        <button className={classTweetButton}>
+          <DynamicIcon icon="ShareDefault" theme={theme} />
           61
         </button>
-
       </div>
 
       <p className="tweet-share-link">Show this thread</p>
-
     </div>
   );
 }

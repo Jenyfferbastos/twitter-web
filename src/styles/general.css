@@ -2,46 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-//pallet global
+:root {
+  --black: #0f1419;
 
-:root{
---black: #0F1419;
+  --dark-1: #17202a;
+  --dark-2: #1c2733;
+  --dark-3: #283340;
+  --dark-4: #3a444c;
+  --dark-5: #5b7083;
+  --dark-6: #8899a6;
+  --dark-7: #ebeef0;
+  --dark-8: #f7f9fa;
 
---dark-1: #17202A;
---dark-2: #1C2733;
---dark-3: #283340;
---dark-4: #3A444C;
---dark-5: #5B7083;
---dark-6: #8899A6;
---dark-7: #EBEEF0;
---dark-8: #F7F9FA;
+  --primary-blue: #1da1f2;
 
---primary-blue: #1DA1F2;
-
---white: #FFFFFF;
+  --white: #ffffff;
 }
 
-
-.divApp{
-display: grid;
-grid-template-columns: 1fr 3fr 2fr;
-height: 80%;
+.App {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  height: 80%;
 }
-.body{
+.app-light {
+  background-color: var(--white);
+}
+.app-dark {
+  background-color: var(--dark-1);
+}
+.body {
   display: flex;
   flex-direction: column-reverse;
 }
-.footerTwitter{
+.footerTwitter {
   z-index: 1;
   position: absolute;
 }
-.divFeed{
-display: flex;
-flex-direction: column;
-border: solid 1.5px #EBEEF0;
+.Feed {
+  display: flex;
+  flex-direction: column;
 }
-.TweetMain{
-  height:600px;
+.feed-light {
+  border: solid 1.5px var(--dark-7);
+}
+.feed-dark {
+  border: solid 1.5px var(--dark-4);
+}
+
+.TweetMain {
+  height: 600px;
   width: 700px;
   overflow-y: auto;
   overflow-x: hidden;

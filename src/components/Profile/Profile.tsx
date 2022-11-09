@@ -1,21 +1,24 @@
-import './style.css'
-import AvatarSmall from "../../assets/img/AvatarSmall.svg"
-import { DynamicIcon } from "../Icons/Icons"
+import "./style.css";
+import AvatarSmall from "../../assets/img/AvatarSmall.svg";
+import { DynamicIcon } from "../Icons/Icons";
 
 export interface ProfileProps {
   textName: string;
   textUser: string;
-
+  theme: string;
 }
-export function Profile({ textName, textUser }: ProfileProps) {
+export function Profile({ textName, textUser, theme }: ProfileProps) {
+  const classProfileWeight = `profile-weight profile-name-${theme}`;
+  const classProfileUser = `profile-user-${theme}`;
+
   return (
-    <div className='profile'>
-      <img className='profile-img' src={ AvatarSmall } />
-      <div className='profile-information-user'>
-      <p className='profile-weight profile-name-light profile-name-dark'>{textName}</p>
-      <p className='profile-user-light profile-user-dark'>{textUser}</p>
+    <div className="profile">
+      <img className="profile-img" src={AvatarSmall} />
+      <div className="profile-information-user">
+        <p className={classProfileWeight}>{textName}</p>
+        <p className={classProfileUser}>{textUser}</p>
       </div>
-      <DynamicIcon icon="EllipsesDefault" theme="light" />
-      </div>
+      <DynamicIcon icon="EllipsesDefault" theme={theme} />
+    </div>
   );
 }

@@ -3,24 +3,31 @@ import imgNewCovid from "../../assets/img/imgNewCovid.svg";
 import imgNewTrump from "../../assets/img/imgNewTrump.svg";
 import imgNewSport from "../../assets/img/imgNewSport.svg";
 
-export function News() {
-  return (
-    <div className="news-container news-container-light news-container-dark">
-      <h2 className="news-title news-title-light news-title-dark news">
-        What's happening
-      </h2>
+export interface NewsProps {
+  theme: string;
+}
 
-      <div className="new-container">
+export function News({ theme }: NewsProps) {
+  const classTheme = `news-container news-container-${theme}`;
+  const classTitle = `news-title news-title-${theme} news`;
+  const classNewsFont = `news-font news-color-${theme}`;
+  const classText = `news-text news-text-${theme}`;
+
+  return (
+    <div className={classTheme}>
+      <h2 className={classTitle}>What's happening</h2>
+
+      <div className="new-container new-container-light new-container-dark">
         <div className="new-text">
           <div className="grid">
             <div className="grid">
-              <h3 className="news-font news-color-light news-color-dark">COVID19 - Last night</h3>
-              <p className="news-text news-text-light news-text-dark">
+              <h3 className={classNewsFont}>COVID19 - Last night</h3>
+              <p className={classText}>
                 England’s Chief Medical Officer says the UK is at the most
                 dangerous time of the pandemic
               </p>
               <div className="flex">
-                <p className="news-font news-color-light news-color-dark">Trending with</p>
+                <p className={classNewsFont}>Trending with</p>
                 <p className="new-hastag">#covid19</p>
               </div>
             </div>
@@ -34,13 +41,13 @@ export function News() {
       <div className="new-container">
         <div className="new-text">
           <div className="grid">
-            <h3 className="news-font news-color-light news-color-dark">US news - 4h ago</h3>
-            <p className="news-text news-text-light news-text-dark">
+            <h3 className={classNewsFont}>US news - 4h ago</h3>
+            <p className={classText}>
               Parler may go offline following suspensions by Amazon, Apple and
               Google
             </p>
             <div className="flex">
-              <p className="news-font news-color-light news-color-dark">Trending with</p>
+              <p className={classNewsFont}>Trending with</p>
               <p className="new-hastag">#trump</p>
             </div>
           </div>
@@ -53,13 +60,13 @@ export function News() {
       <div className="new-container">
         <div className="new-text">
           <div className="grid">
-            <h3 className="news-font news-color-light news-color-dark">India - 1h ago</h3>
-            <p className="news-text news-text-light news-text-dark">
+            <h3 className={classNewsFont}>India - 1h ago</h3>
+            <p className={classText}>
               India vs Australia: India hold on to earn a draw on Day 5 in
               Sydney Test
             </p>
             <div className="flex">
-              <p className="news-font news-color-light news-color-dark">Trending with</p>
+              <p className={classNewsFont}>Trending with</p>
               <p className="new-hastag">#sport</p>
             </div>
           </div>

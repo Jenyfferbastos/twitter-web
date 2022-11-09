@@ -1,4 +1,6 @@
 import "./styles/general.css";
+import { useState, useContext } from "react";
+
 import { SideMenu } from "./components/SideMenu/SideMenu";
 import { Header } from "./components/Header/Header";
 import { Post } from "./components/Post/Post";
@@ -8,25 +10,30 @@ import { News } from "./components/News/News";
 import { Follow } from "./components/Follow/Follow";
 import { TermsServicePrivacyPolicy } from "./components/TermsServicePrivacyPolicy/TermsServicePrivacyPolicy";
 import { Footer } from "./components/Footer/Footer";
+import { DynamicIcon } from "./components/Icons/Icons";
+import { ThemeContext } from './common/context/Theme'
 
 export function App() {
+ const {
+  theme, setTheme
+ } = useContext(ThemeContext)
   return (
     <div className="body">
-      <div className="divApp">
-        <SideMenu />
-        <div className="divFeed">
+      <div className="App app-light app-dark">
+        <SideMenu theme={theme} />
+        <div className="Feed feed-light feed-dark">
           <Header title="Home" />
           <Post />
           <div className="TweetMain">
-            <Tweet />
-            <Tweet />
-            <Tweet />
+            <Tweet theme={theme} />
+            <Tweet theme={theme} />
+            <Tweet theme={theme} />
           </div>
         </div>
         <div>
-          <SearchBar />
-          <News />
-          <Follow />
+          <SearchBar theme={theme} />
+          <News theme={theme} />
+          <Follow theme={theme} />
           <TermsServicePrivacyPolicy />
         </div>
       </div>

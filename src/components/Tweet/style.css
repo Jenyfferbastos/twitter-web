@@ -1,7 +1,12 @@
 .tweet {
   width: 100%;
   height: 70%;
+}
+.tweet-light{
   border-bottom: solid 1.5px var(--dark-7);
+}
+.tweet-dark{
+  border-bottom: solid 1.5px var(--dark-4);
 }
 
 .tweet-profile {

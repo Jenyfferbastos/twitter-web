@@ -1,10 +1,15 @@
-.divPost{
+.Post{
   display: grid;
   grid-template-rows: 1fr 1fr;
   height: 100px;
-  border-bottom: solid 1.5px #EBEEF0;
   margin-top: 10px;
   align-items: center;
+}
+.post-light{
+  border-bottom: solid 1.5px var(--dark-7);
+}
+.post-dark{
+  border-bottom: solid 1.5px var(--dark-4);
 }
 .imgAvatarFeed{
   width: 50px;
@@ -20,8 +25,15 @@
   margin: 0px 10px 20px 70px;
 
 }
-.divTextAreaPost{
+.TextAreaPost{
   outline: none;
   resize: none;
   width: 98%;
+  
+}
+.TextAreaPost-light{
+  background-color: var(--white);
+}
+.TextAreaPost-dark{
+  background-color: var(--dark-1);
 }

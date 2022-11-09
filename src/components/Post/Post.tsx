@@ -3,13 +3,16 @@ import { ButtonPrimaryMedium } from "../buttons/ButtonPrimaryMedium/ButtonPrimar
 import { DynamicIcon } from "../Icons/Icons"
 import AvatarSmall from "../../assets/img/AvatarSmall.svg"
 
-export function Post() {
+
+export interface PostProps {}
+
+export function Post({}: PostProps) {
   return (
-    <div className="divPost">
+    <div className="Post post-light post-dark">
       <div className="divPostProfile">
         <img className="imgAvatarFeed" src={AvatarSmall}></img>
         <textarea
-          className="divTextAreaPost"
+          className="TextAreaPost TextAreaPost-light TextAreaPost-dark"
           name="texto"
           maxLength={380}
           placeholder="What's happening?"

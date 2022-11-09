@@ -3,14 +3,15 @@
   height: 50px;
   justify-content: space-between;
   align-items: center;
-  border-bottom: solid 1.5px var(--dark-7);
   font-weight: 600;
 }
 .header-light{
   color: var(--black);
+  border-bottom: solid 1.5px var(--dark-7);
 }
 .header-dark{
   color: var(--white);
+  border-bottom: solid 1.5px var(--dark-4);
 }
 .header-title{
   margin-left: 15px;

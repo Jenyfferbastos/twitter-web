@@ -14,7 +14,7 @@
 .follow-title {
   font-size: 16px;
   margin: 10px;
-  border-bottom: solid 2px #ebeef0;
+  border-bottom: solid 2px var(--dark-4);
 }
 .follow-title-light {
   color: var(--black);
@@ -28,7 +28,7 @@
   height: 50px;
   align-items: center;
   grid-template-columns: 1fr 2fr 1fr;
-  border-bottom: solid 2px #ebeef0;
+  border-bottom: solid 2px var(--dark-4);
 }
 .follow-img-profile {
   width: 40%;

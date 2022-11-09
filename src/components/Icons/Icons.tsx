@@ -7,7 +7,6 @@ export interface DynamicIconProps {
   theme?: string;
 }
 export function DynamicIcon({ icon, theme }: DynamicIconProps) {
-  console.log(defineIcon(icon, theme));
   return (
     <>
       <img src={defineIcon(icon, theme)} />
@@ -25,4 +24,3 @@ function defineIcon(icon: string, theme?: string) {
   }
   return iconsCommonTheme[icon];
 }
-
