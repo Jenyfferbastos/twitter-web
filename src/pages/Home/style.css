@@ -1,0 +1,42 @@
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  height: 80%;
+}
+.app-light {
+  background-color: var(--white);
+}
+.app-dark {
+  background-color: var(--dark-1);
+}
+.body {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.footerTwitter {
+  z-index: 1;
+  position: absolute;
+}
+.Feed {
+  display: flex;
+  flex-direction: column;
+}
+.feed-light {
+  border: solid 1.5px var(--dark-7);
+}
+.feed-dark {
+  border: solid 1.5px var(--dark-4);
+}
+
+.TweetMain {
+  height: 600px;
+  width: 700px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.TweetMain::-webkit-scrollbar {
+  width: 0px;
+}

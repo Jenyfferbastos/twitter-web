@@ -2,12 +2,13 @@ import "./style.css";
 import AvatarMedium from "../../assets/img/AvatarSmall.svg";
 import ImageFeed from "../../assets/img/ImageFeed.svg";
 import { DynamicIcon } from "../Icons/Icons";
+import { useContext } from "react";
+import { ThemeContext } from "../../common/context/Theme";
 
-export interface ITweetProps {
-  theme: string;
-}
+export function Tweet() {
+  const { theme } = useContext(ThemeContext);
 
-export function Tweet({ theme }: ITweetProps) {
+  const classTweet = `tweet tweet-${theme}`;
   const classTweetName = `tweet-name-${theme}`;
   const classTweetUser = `tweet-user-${theme}`;
   const classTempPost = `tweet-temp-post-${theme}`;
@@ -15,7 +16,7 @@ export function Tweet({ theme }: ITweetProps) {
   const classTweetButton = `tweet-button tweet-button-${theme}`;
 
   return (
-    <div className="tweet tweet-light tweet-dark">
+    <div className={classTweet}>
       <div className="tweet-profile">
         <img className="tweet-img-avatar" src={AvatarMedium}></img>
         <div>

@@ -1,18 +1,25 @@
 import "./style.css";
+import { useContext } from "react";
 import { ButtonPrimaryMedium } from "../buttons/ButtonPrimaryMedium/ButtonPrimaryMedium";
 import { DynamicIcon } from "../Icons/Icons"
 import AvatarSmall from "../../assets/img/AvatarSmall.svg"
+import { ThemeContext } from "../../common/context/Theme";
 
 
-export interface PostProps {}
+export function Post() {
+  const {
+    theme, 
+   } = useContext(ThemeContext)
 
-export function Post({}: PostProps) {
+   const classPost = `Post post-${theme}`;
+   const classTextAreaPost = `TextAreaPost TextAreaPost-${theme}`;
+  
   return (
-    <div className="Post post-light post-dark">
+    <div className={classPost}>
       <div className="divPostProfile">
         <img className="imgAvatarFeed" src={AvatarSmall}></img>
         <textarea
-          className="TextAreaPost TextAreaPost-light TextAreaPost-dark"
+          className={classTextAreaPost}
           name="texto"
           maxLength={380}
           placeholder="What's happening?"

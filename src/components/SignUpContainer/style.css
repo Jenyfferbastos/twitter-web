@@ -1,0 +1,44 @@
+.signup-container {
+  background-image: url('../../assets/img/back-twitter-signup.png');
+  background-repeat: no-repeat;
+  background-position-x: -7px;
+  background-position-y: -3px;
+  background-size: 60vw 94vh;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-content: end;
+}
+.signup-container-acess{
+  width: 38vw;
+  height: 70vh;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  margin-top: 70px;
+}
+.img-logo-twitter{
+  width: 50px;
+}
+.title-signup{
+  font-size: 50px;
+  font-weight: 600;
+}
+.title-secondary-signup{
+  font-size: 28px;
+  font-weight: 600;
+}
+.buttom-signup{
+  border: solid 2px var(--dark-7);
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.links-signup{
+  color: var(--primary-blue);
+}
+.text-signup{
+  font-size: 12px;
+}

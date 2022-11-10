@@ -1,10 +1,13 @@
+import { useContext } from "react";
 import "./style.css";
 import { DynamicIcon } from "../../Icons/Icons";
+import { ThemeContext } from "../../../common/context/Theme";
 
-export interface ButtonSideMenuProps {
-  theme: string;
-}
-export function ButtonSideMenu({ theme }: ButtonSideMenuProps) {
+export function ButtonSideMenu() {
+  const {
+    theme, 
+   } = useContext(ThemeContext)
+   
   const classButton = `button button-${theme}`;
 
   return (

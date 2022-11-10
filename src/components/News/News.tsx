@@ -1,13 +1,15 @@
+import { useContext } from "react";
 import "./style.css";
 import imgNewCovid from "../../assets/img/imgNewCovid.svg";
 import imgNewTrump from "../../assets/img/imgNewTrump.svg";
 import imgNewSport from "../../assets/img/imgNewSport.svg";
+import { ThemeContext } from "../../common/context/Theme";
 
-export interface NewsProps {
-  theme: string;
-}
-
-export function News({ theme }: NewsProps) {
+export function News() {
+  const {
+    theme, 
+   } = useContext(ThemeContext)
+  
   const classTheme = `news-container news-container-${theme}`;
   const classTitle = `news-title news-title-${theme} news`;
   const classNewsFont = `news-font news-color-${theme}`;

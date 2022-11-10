@@ -3,8 +3,6 @@ import "./style.css";
 import { DynamicIcon } from "../Icons/Icons";
 import { ThemeContext } from '../../common/context/Theme';
 
-
-
 export interface HeaderProps {
   title: string;
 }

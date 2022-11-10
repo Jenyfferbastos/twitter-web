@@ -1,12 +1,16 @@
+import { useContext } from "react";
 import "./style.css";
 import AvatarMediumFollow from "../../assets/img/AvatarMediumFollow.svg";
 import AvatarMediumFollowB from "../../assets/img/AvatarMediumFollowB.svg";
+import { ThemeContext } from "../../common/context/Theme";
 
-export interface IFollowProps {
-  theme: string;
-}
 
-export function Follow({ theme }: IFollowProps) {
+export function Follow() {
+  const {
+    theme, 
+   } = useContext(ThemeContext)
+   
+  const classFollowProfile = `follow-profile follow-profile-${theme}`
   const classFollow = `follow follow-${theme}`;
   const classFollowTitle = `follow-title follow-title-${theme}`;
   const classFollowName = `follow-name follow-name-${theme}`;
@@ -16,7 +20,7 @@ export function Follow({ theme }: IFollowProps) {
     <div className={classFollow}>
       <h3 className={classFollowTitle}>Who to follow</h3>
 
-      <div className="follow-profile">
+      <div className={classFollowProfile}>
         <img className="follow-img-profile" src={AvatarMediumFollow}></img>
         <div>
           <h4 className={classFollowName}>Bessie Cooper</h4>
@@ -27,7 +31,7 @@ export function Follow({ theme }: IFollowProps) {
         <button className="buttonFollow">Follow</button>
       </div>
 
-      <div className="follow-profile">
+      <div className={classFollowProfile}>
         <img className="follow-img-profile" src={AvatarMediumFollowB}></img>
         <div>
           <h4 className={classFollowName}>Jeny Wilson</h4>

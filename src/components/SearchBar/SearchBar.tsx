@@ -1,11 +1,13 @@
+import { useContext } from "react";
 import "./style.css";
 import { DynamicIcon } from "../Icons/Icons";
+import { ThemeContext } from "../../common/context/Theme";
 
-export interface ISearchBarProps {
-  theme: string;
-}
-
-export function SearchBar({ theme }: ISearchBarProps) {
+export function SearchBar() {
+  const {
+    theme, 
+   } = useContext(ThemeContext)
+   
   const classSearchBar = `search-bar search-bar-${theme}`;
   const classSearchInput = `search-input search-input-${theme}`;
 
