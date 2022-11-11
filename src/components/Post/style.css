@@ -23,17 +23,17 @@
   justify-content: space-between;
   align-items: center;
   margin: 0px 10px 20px 70px;
-
 }
 .TextAreaPost{
   outline: none;
   resize: none;
   width: 98%;
-  
 }
 .TextAreaPost-light{
   background-color: var(--white);
+  color: var(--black);
 }
 .TextAreaPost-dark{
   background-color: var(--dark-1);
+  color: var(--white);
 }

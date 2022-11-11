@@ -11,7 +11,7 @@ export function Login() {
     <div className="login-container">
       <img className="img-logo-twitter" src={LogoTwitter}></img>
       <h1 className="title-login">Log in to Twitter</h1>
-      <form>
+      <form className="form-login">
       <input
         className="input-login"
         type="text"

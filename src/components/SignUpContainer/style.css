@@ -7,14 +7,17 @@
   height: 100vh;
   width: 100vw;
   display: grid;
+  grid-template-rows: 20fr 1fr;
   justify-content: end;
 }
 .signup-container-acess{
-  width: 38vw;
+  width: 100vw;
   height: 70vh;
   display: grid;
   grid-template-rows: repeat(8, 1fr);
-  margin-top: 70px;
+  margin-top: 100px;
+  margin-right: 150px;
+  justify-content: end;
 }
 .img-logo-twitter{
   width: 50px;
@@ -41,4 +44,124 @@
 }
 .text-signup{
   font-size: 12px;
+}
+.have-login{
+  margin-top: 30px;
+}
+.footer-signup{
+  font-size: 11px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  margin-left: 300px;
+}
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
+}
+
+.modal, .overlap {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.overlap {
+  background: rgba(49,49,49,0.8);
+}
+.modal-container {
+  position: absolute;
+  top: 350px;
+  left: 760px;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: var(--white);
+  padding: 14px 28px;
+  border-radius: 3px;
+  width: 550px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-signup-modal{
+  display: flex;
+  flex-direction: column;
+}
+.img-signup-modal{
+  width: 35px;
+  margin-top: 20PX;
+}
+.label-signup-modal{
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.input-signup-modal{
+  border: solid 1px var(--dark-6);
+  border-radius: 2px;
+  width: 450px;
+  height: 45px;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 13px;
+}
+.link-email-modal{
+  color: var(--primary-blue);
+  font-size: 14px;
+  margin-top: 30px;
+}
+.title-modal{
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.text-modal{
+  font-size: 12px;
+  color: var(--dark-4);
+  margin-top: 15px;
+}
+.selects-modal{
+  display: flex;
+  justify-content: space-between;
+}
+.select-modal{
+  border: solid 1px var(--dark-6);
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--dark-5);
+  font-size: 14px;
+  margin-top: 20px;
+}
+.select-month-modal{
+  width: 210px;
+}
+.select-day-modal{
+  width: 130px;
+}
+.select-year-modal{
+  width: 130px;
+}
+.button-submit-form-modal{
+  background-color: var(--primary-blue);
+  color: var(--white);
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.close-modal {
+  position: absolute;
+  margin-top: 10px;
+  margin-right: 500px;
+  padding: 5px 7px;
+  font-weight: 600;
+  color: var(--dark-5);
 }

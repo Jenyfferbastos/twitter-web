@@ -3,7 +3,7 @@
   flex-direction: column;
   border-radius: 20px;
   margin: 10px 20px;
-  height: 55%;
+  height: 400px;
 }
 .news-container-light {
   background: var(--dark-8);
@@ -14,14 +14,15 @@
 .news-title {
   font-weight: 600;
   font-size: 16px;
-  border-bottom: solid 2px var(--dark-4);
-  margin: 10px;
+  padding: 8px;
 }
 .news-title-light {
   color: var(--black);
+  border-bottom: solid 2px var(--dark-7);
 }
 .news-title-dark {
   color: var(--white);
+  border-bottom: solid 2px var(--dark-4);
 }
 .new-text {
   margin: 5px;
@@ -29,7 +30,7 @@
 .new-container {
   display: grid;
   grid-template-columns: 5fr 1fr;
-  margin-right: 20px;
+  padding-right: 10px;
 }
 .new-container-light{
   border-bottom: solid 2px var(--dark-7);

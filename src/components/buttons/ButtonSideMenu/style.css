@@ -10,7 +10,8 @@
   color: var(--white);
 }
 .button-side-menu {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
 }
 img {
   margin-right: 10px;

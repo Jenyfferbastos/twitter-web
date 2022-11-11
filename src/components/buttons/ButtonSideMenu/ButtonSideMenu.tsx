@@ -1,19 +1,27 @@
 import { useContext } from "react";
+// import { useHistory } from "react-router-dom";
 import "./style.css";
 import { DynamicIcon } from "../../Icons/Icons";
 import { ThemeContext } from "../../../common/context/Theme";
+import { Link } from "react-router-dom";
 
 export function ButtonSideMenu() {
   const {
     theme, 
    } = useContext(ThemeContext)
-   
-  const classButton = `button button-${theme}`;
+
+   const classButton = `button button-${theme}`;
+
+  //  let history = useHistory();
+
+  //  function handleClick() {
+  //   history.push("/error");
+  // }
 
   return (
     <>
       <div className={classButton}>
-        <button className="button-side-menu">
+        <button className="button-side-menu" type="button">
           <DynamicIcon icon="HomeDefault" theme={theme} />
           Home
         </button>
@@ -56,8 +64,8 @@ export function ButtonSideMenu() {
 
       <div className={classButton}>
         <button className="button-side-menu">
-          <DynamicIcon icon="ProfileDefault" theme={theme} />
-          Profile
+         <DynamicIcon icon="ProfileDefault" theme={theme} />
+         <Link to='/Profile'>Profile</Link>
         </button>
       </div>
 

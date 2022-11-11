@@ -1,9 +1,10 @@
 .search-bar{
   display: flex;
   height: 35px;
-  width: 70%;
+  width: 300px;
   margin: 10px 0px 10px 30px;
   border-radius: 30px;
+  padding: 10px;
 }
 .search-bar-light{
   background: var(--dark-7)
@@ -11,7 +12,6 @@
 .search-bar-dark{
   background: var(--dark-3)
 }
-
 .search-input{
   outline: none;
 }

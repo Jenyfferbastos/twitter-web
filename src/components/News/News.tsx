@@ -9,7 +9,8 @@ export function News() {
   const {
     theme, 
    } = useContext(ThemeContext)
-  
+   
+  const classNewContainer = `new-container new-container-${theme}`
   const classTheme = `news-container news-container-${theme}`;
   const classTitle = `news-title news-title-${theme} news`;
   const classNewsFont = `news-font news-color-${theme}`;
@@ -19,7 +20,7 @@ export function News() {
     <div className={classTheme}>
       <h2 className={classTitle}>What's happening</h2>
 
-      <div className="new-container new-container-light new-container-dark">
+      <div className={classNewContainer}>
         <div className="new-text">
           <div className="grid">
             <div className="grid">
@@ -40,7 +41,7 @@ export function News() {
         </div>
       </div>
 
-      <div className="new-container">
+      <div className={classNewContainer}>
         <div className="new-text">
           <div className="grid">
             <h3 className={classNewsFont}>US news - 4h ago</h3>
@@ -59,7 +60,7 @@ export function News() {
         </div>
       </div>
 
-      <div className="new-container">
+      <div className={classNewContainer}>
         <div className="new-text">
           <div className="grid">
             <h3 className={classNewsFont}>India - 1h ago</h3>
