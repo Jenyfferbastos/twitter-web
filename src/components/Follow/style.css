@@ -1,7 +1,7 @@
 .follow {
   font-weight: 600;
-  width: 91%;
-  height: 21%;
+  width: 400px;
+  height: 170px;
   border-radius: 15px;
   margin-left: 20px;
 }
@@ -14,6 +14,7 @@
 .follow-title {
   font-size: 16px;
   padding: 5px;
+  margin: 0;
 }
 .follow-title-light {
   color: var(--black);
@@ -38,7 +39,7 @@
 }
 
 .follow-img-profile {
-  width: 40%;
+  width: 40px;
   margin-left: 25px;
 }
 .follow-name-light{
@@ -55,14 +56,14 @@
 }
 
 .buttonFollow {
-  color: #1da1f2;
-  border: solid 1px #1da1f2;
+  color: var(--primary-blue);
+  border: solid 1px var(--primary-blue);
   border-radius: 20px;
   width: 85px;
   height: 30px;
 }
 .showMoreFollow {
-  color: #1da1f2;
+  color:var(--primary-blue);
   margin-left: 20px;
   font-size: 13px;
 }

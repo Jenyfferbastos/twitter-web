@@ -12,10 +12,18 @@ export function App(){
   const {
     theme, 
   } = useContext(ThemeContext)
+
+  const Private = ({ Item }) => {
+    
+    const { signed } = false;
+  
+    return signed > 0 ? <Item /> : <LoginPage/>;
+  }
+
   return(
     <Router>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Private Item={Home} />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/profile' element={<Profile />} />

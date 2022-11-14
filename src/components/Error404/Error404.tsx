@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { SideMenu } from '../SideMenu/SideMenu'
 import './style.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ThemeContext } from '../../common/context/Theme';
 
 export function Error404(){
@@ -12,11 +12,11 @@ export function Error404(){
   return(
     <>
     <div>
-    <SideMenu theme={theme} />
+    <SideMenu/>
     </div>
     <div>
       <p>Hey, this page doesn't exist. Try looking for something else.</p>
-      <button><Link to='/'>Search</Link></button>
+      <button>Search</button>
     </div>
     </>
   )

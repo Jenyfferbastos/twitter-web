@@ -24,7 +24,7 @@ export function Header({ title }: HeaderProps) {
     <>
       <div className={classHeader}>
         <h1 className="header-title">{title}</h1>
-        <button className="buttonMode" onClick={handleTheme}>
+        <button className="button-mode" onClick={handleTheme}>
             <DynamicIcon icon="TopTweetDefault" theme="common" />
           </button>
       </div>

@@ -1,9 +1,13 @@
 import "./style.css"
 import { Link } from "react-router-dom"
+import { useContext } from "react"
+import { ThemeContext } from "../../common/context/Theme"
 
-export interface FooterProps {}
+export function Footer() {
+  const {
+    theme, 
+   } = useContext(ThemeContext)
 
-export function Footer({}:FooterProps){
   return(
     <div className="footerTwitter">
       <div className="textsFooter">

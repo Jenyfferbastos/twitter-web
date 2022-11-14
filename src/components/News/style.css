@@ -3,7 +3,9 @@
   flex-direction: column;
   border-radius: 20px;
   margin: 10px 20px;
+  width: 400px;
   height: 400px;
+  line-height: 1.5;
 }
 .news-container-light {
   background: var(--dark-8);
@@ -39,7 +41,9 @@
   border-bottom: solid 2px var(--dark-4);
 }
 .new-img {
-  width: 300px;
+  margin: 0;
+  width: 90px;
+  height: 70px;
   margin-top: 20px;
 }
 .grid {
@@ -49,7 +53,7 @@
 .news-text {
   font-size: 14px;
   font-weight: 600;
-  width: 80%;
+  width: 300px;
 }
 .news-text-dark {
   color: var(--white);

@@ -1,22 +1,19 @@
 import { useContext } from "react";
-// import { useHistory } from "react-router-dom";
 import "./style.css";
 import { DynamicIcon } from "../../Icons/Icons";
 import { ThemeContext } from "../../../common/context/Theme";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-export function ButtonSideMenu() {
+export interface ButtonSideMenuProps{}
+
+export function ButtonSideMenu({}: ButtonSideMenuProps) {
   const {
     theme, 
    } = useContext(ThemeContext)
+   
+   let navigate = useNavigate();
 
-   const classButton = `button button-${theme}`;
-
-  //  let history = useHistory();
-
-  //  function handleClick() {
-  //   history.push("/error");
-  // }
+   const classButton = `button button-${theme}`
 
   return (
     <>
@@ -28,7 +25,7 @@ export function ButtonSideMenu() {
       </div>
 
       <div className={classButton}>
-        <button className="button-side-menu">
+        <button className="button-side-menu" onClick={() => navigate("/*")}>
           <DynamicIcon icon="ExploreDefault" theme={theme} />
           Explore
         </button>

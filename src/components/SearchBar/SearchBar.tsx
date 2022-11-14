@@ -3,7 +3,9 @@ import "./style.css";
 import { DynamicIcon } from "../Icons/Icons";
 import { ThemeContext } from "../../common/context/Theme";
 
-export function SearchBar() {
+export interface SearchBarProps {}
+
+export function SearchBar({}: SearchBarProps) {
   const {
     theme, 
    } = useContext(ThemeContext)

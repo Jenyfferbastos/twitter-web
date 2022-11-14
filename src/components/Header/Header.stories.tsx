@@ -1,3 +1,4 @@
+import '../../styles/reset.css'
 import { Meta, StoryObj } from "@storybook/react";
 import { Header, HeaderProps } from "./Header";
 

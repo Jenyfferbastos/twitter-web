@@ -5,7 +5,9 @@ import { DynamicIcon } from "../Icons/Icons";
 import { useContext } from "react";
 import { ThemeContext } from "../../common/context/Theme";
 
-export function Tweet() {
+export interface TweetProps {}
+
+export function Tweet({}: TweetProps) {
   const { theme } = useContext(ThemeContext);
 
   const classTweet = `tweet tweet-${theme}`;

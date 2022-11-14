@@ -1,5 +1,7 @@
+import '../../styles/reset.css'
 import { Meta, StoryObj } from "@storybook/react";
 import { Follow, FollowProps } from "./Follow";
+
 
 export default {
   title: "Components/Follow",

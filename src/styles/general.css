@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root { 
+  font-family: 'Poppins';
+}
 :root {
+  
   --black: #0f1419;
 
   --dark-1: #17202a;
@@ -18,3 +22,4 @@
 
   --white: #ffffff;
 }
+

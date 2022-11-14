@@ -4,9 +4,11 @@
   font-size: 16px;
   margin-top: 100px;
   align-items: center;
+  width: 300px;
 }
 .profile-img {
   width: 55px;
+  height: 47px;
 }
 .profile-information-user {
   display: flex;
