@@ -21,9 +21,17 @@
 }
 .buttonsPost{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: 0px 10px 20px 70px;
+}
+.buttons-icons{
+  display: flex;
+  align-items: center;
+}
+#media-input{
+  display: none;
 }
 .TextAreaPost{
   outline: none;

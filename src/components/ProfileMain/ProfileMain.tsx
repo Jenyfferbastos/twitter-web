@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import "./style.css";
-import AvatarMedium from "../../assets/img/AvatarMedium.svg";
+import AvatarSmall from "../../assets/img/AvatarSmall.svg";
+import BackProfile from "../../assets/img/backProfile.svg";
 import { DynamicIcon } from "../Icons/Icons";
 import { ThemeContext } from "../../common/context/Theme";
 import { SideMenu } from "../SideMenu/SideMenu";
@@ -17,7 +18,8 @@ export function ProfileMain() {
       <SideMenu />
       </div>
       <div>
-      <img src={AvatarMedium} />
+      <img src={BackProfile} />
+      <img src={AvatarSmall} />
       <h2>Davide Biscuso</h2>
       <h3>@biscuttu</h3>
       <h4>Product Designer</h4>
