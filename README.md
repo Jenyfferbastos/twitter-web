@@ -35,10 +35,10 @@ Inicie o servidor
 ```
 ## Dados de login
 ```bash
-**Email:** admin
+Email: admin
 ```
 ```bash
-**Senha:** admin
+Senha: admin
 ```
 ## Stack utilizada
 
