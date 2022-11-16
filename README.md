@@ -6,7 +6,7 @@
 ## Funcionalidades
 
 - `Mode`: Mode light e dark.
-- `Login`: Validação de login.
+- `Login`: Validação de login. 
 - `LocalStorage`: Armazenamento de de dados de login no LocalStorage.
 - `Logout`: Botão de logout no canto esquerdo inferior. Contém ícone de reticências.
 - `Botões`: Botões que não possuem correspondência levam para página de erro 404.
@@ -33,7 +33,10 @@ Inicie o servidor
 ```bash
   Para abrir o storybook digite npm run storybook
 ```
+## Dados de login
 
+**Email:** admin
+**Senha:** admin
 ## Stack utilizada
 
 **Front-end:** React, TypeScript, CSS3
