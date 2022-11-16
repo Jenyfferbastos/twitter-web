@@ -34,9 +34,12 @@ Inicie o servidor
   Para abrir o storybook digite npm run storybook
 ```
 ## Dados de login
-
+```bash
 **Email:** admin
+```
+```bash
 **Senha:** admin
+```
 ## Stack utilizada
 
 **Front-end:** React, TypeScript, CSS3
