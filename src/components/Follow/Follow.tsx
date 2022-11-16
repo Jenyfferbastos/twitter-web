@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import "./style.css";
-import AvatarMediumFollow from "../../assets/img/AvatarMediumFollow.svg";
-import AvatarMediumFollowB from "../../assets/img/AvatarMediumFollowB.svg";
+import AvatarSmall from "../../assets/img/AvatarSmall.svg";
 import { ThemeContext } from "../../common/context/Theme";
 
 
@@ -21,7 +20,7 @@ export function Follow() {
       <h3 className={classFollowTitle}>Who to follow</h3>
 
       <div className={classFollowProfile}>
-        <img className="follow-img-profile" src={AvatarMediumFollow}></img>
+        <img className="follow-img-profile" src={AvatarSmall}></img>
         <div>
           <h4 className={classFollowName}>Bessie Cooper</h4>
           <h5 className={classFollowUser}>
@@ -32,7 +31,7 @@ export function Follow() {
       </div>
 
       <div className={classFollowProfile}>
-        <img className="follow-img-profile" src={AvatarMediumFollowB}></img>
+        <img className="follow-img-profile" src={AvatarSmall}></img>
         <div>
           <h4 className={classFollowName}>Jeny Wilson</h4>
           <h5 className={classFollowUser}>

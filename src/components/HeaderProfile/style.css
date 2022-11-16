@@ -1,0 +1,18 @@
+.container-header-profile{
+  display: flex;
+  width: 700px;
+  border-bottom: solid 1px var(--dark-4);
+}
+.button-arrow-back{
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.title-header-profile{
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black);
+}
+.text-header-profile{
+  font-size: 12px;
+  color: var(--dark-4);
+}

@@ -1,4 +1,77 @@
-.container-profile-main{
+.container-side-menu {
+  border-right: solid 2px var(--dark-7);
+}
+.container-profile-main {
   display: grid;
   grid-template-columns: 2fr 4fr 2fr;
+}
+.back-profile-main {
+  width: 700px;
+}
+.avatar-profile {
+  width: 120px;
+  border: solid 3px var(--black);
+  border-radius: 60px;
+  z-index: 1;
+  margin-top: -70px;
+  margin-left: 15px;
+}
+.container-informations {
+  display: flex;
+  width: 560px;
+}
+.informations {
+  display: flex;
+  color: var(--dark-5);
+  margin-right: 8px;
+  font-size: 16px;
+}
+.name-profile {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--black);
+}
+.user {
+  margin-left: 10px;
+}
+.user-profile {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark-5);
+}
+.container-follower {
+  display: flex;
+}
+.following,
+.followers {
+  display: flex;
+  margin-right: 10px;
+}
+.number-following,
+.number-followers {
+  color: var(--black);
+  font-weight: 600;
+  margin-right: 5px;
+}
+.button-edit-profile {
+  color: var(--primary-blue);
+  border: solid 2px var(--primary-blue);
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+}
+.TweetMain {
+  height: 600px;
+  width: 700px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.TweetMain::-webkit-scrollbar {
+  width: 0px;
+}
+.container-search{
+  border-left: solid 2px var(--dark-7)
 }

@@ -1,29 +1,40 @@
 import "./style.css";
 import LogoTwitter from "../../assets/img/LogoTwitter.svg";
 import React, { FormEvent, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+interface UserData {
+  name?: string;
+  password?: string;
+}
 
 export function Login() {
-  const [name, setName] = useState<string>("");
-  const [password, setPassword] = useState<string>("");
-
+  const [userData, setUserData] = useState<UserData>({});
+  const history = useNavigate();
 
   function submitForm(event: FormEvent) {
     event.preventDefault();
-    if (name == "admin" || password == "admin") {
-      localStorage.setItem("acess", true);
-      return window.location.href = "http://127.0.0.1:5173/";
+    if (userData.name == "admin" && userData.password == "admin") {
+      localStorage.setItem("user-data", JSON.stringify(userData));
+      history("/");
     } else {
       return alert("Login inválido!");
     }
+  }
+
+  const handleUserData = ({ name, password }: UserData) => {
+    if (name) {
+      setUserData((prevStateValue) => ({
+        ...prevStateValue,
+        name,
+      }));
+    } else if (password)
+      setUserData((prevStateValue) => ({
+        ...prevStateValue,
+        password,
+      }));
   };
 
-  const acessName = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setName(event.target.value);
-  };
-
-  const acessPassword = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setPassword(event.target.value);
-  };
   return (
     <div className="login-container">
       <img className="img-logo-twitter" src={LogoTwitter}></img>
@@ -36,7 +47,7 @@ export function Login() {
           id="email"
           placeholder="Email"
           required
-          onChange={acessName}
+          onChange={(e) => handleUserData({ name: e.target.value })}
         />
         <input
           className="input-login"
@@ -44,7 +55,7 @@ export function Login() {
           id="password"
           placeholder="Password"
           required
-          onChange={acessPassword}
+          onChange={(e) => handleUserData({ password: e.target.value })}
         />
         <button className="button-login" type="submit">
           Log in

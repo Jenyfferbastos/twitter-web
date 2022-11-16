@@ -1,0 +1,14 @@
+.buttons-tabbar{
+  margin-top: 35px;
+  width: 700px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: solid 2px var(--dark-7);
+  color: var(--dark-5);
+  font-size: 16px;
+  font-weight: 600;
+}
+.button-tabbar:hover{
+  border-bottom: solid 2px var(--primary-blue);
+  color: var(--primary-blue);
+}

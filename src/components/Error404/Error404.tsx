@@ -1,8 +1,8 @@
-import { useContext } from 'react';
-import { SideMenu } from '../SideMenu/SideMenu'
 import './style.css'
+import LogoTwitter from "../../assets/img/LogoTwitter.svg"
 import { Link, useNavigate } from 'react-router-dom';
 import { ThemeContext } from '../../common/context/Theme';
+import { useContext } from 'react';
 
 export function Error404(){
   const {
@@ -10,14 +10,12 @@ export function Error404(){
    } = useContext(ThemeContext)
    
   return(
-    <>
-    <div>
-    <SideMenu/>
-    </div>
+    <div className='container-error'>
+    <img className='logo-twitter' src={LogoTwitter} />
     <div>
       <p>Hey, this page doesn't exist. Try looking for something else.</p>
-      <button>Search</button>
     </div>
-    </>
+    <button className='button-return-home'><Link to="/">Return Home</Link></button>
+    </div>
   )
 }

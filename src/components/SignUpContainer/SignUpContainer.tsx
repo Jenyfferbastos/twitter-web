@@ -58,7 +58,7 @@ export function SignUpContainer() {
           </p>
           <p className="have-login">
             Already have an account?
-            <Link className="links-signup" to="/Login">
+            <Link className="links-signup" to="/login">
               {" "}
               Log in
             </Link>
@@ -171,7 +171,7 @@ export function SignUpContainer() {
                   <option>Year</option>
                 </select>
               </div>
-            <button className="button-submit-form-modal">Next</button>
+              <button className="button-submit-form-modal">Next</button>
             </form>
             <button className="close-modal" onClick={toggleModal}>
               X

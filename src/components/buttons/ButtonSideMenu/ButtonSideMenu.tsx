@@ -20,42 +20,42 @@ export function ButtonSideMenu({}: ButtonSideMenuProps) {
       <div className={classButton}>
         <button className="button-side-menu" type="button">
           <DynamicIcon icon="HomeDefault" theme={theme} />
-          Home
+          <Link to="/"> Home</Link>
         </button>
       </div>
 
       <div className={classButton}>
         <button className="button-side-menu" onClick={() => navigate("/*")}>
           <DynamicIcon icon="ExploreDefault" theme={theme} />
-          Explore
+          <Link to="/*">Explore</Link>
         </button>
       </div>
 
       <div className={classButton}>
         <button className="button-side-menu">
           <DynamicIcon icon="NotificationsDefault" theme={theme} />
-          Notifications
+          <Link to="/*">Notifications</Link>
         </button>
       </div>
 
       <div className={classButton}>
         <button className="button-side-menu">
           <DynamicIcon icon="MessagesDefault" theme={theme} />
-          Messages
+          <Link to="/*">Messages</Link>
         </button>
       </div>
 
       <div className={classButton}>
         <button className="button-side-menu">
           <DynamicIcon icon="BookmarksDefault" theme={theme} />
-          Bookmarks
+          <Link to="/*">Bookmarks</Link>
         </button>
       </div>
 
       <div className={classButton}>
         <button className="button-side-menu">
           <DynamicIcon icon="ListsDefault" theme={theme} />
-          Lists
+          <Link to="/*"> Lists</Link>
         </button>
       </div>
 
@@ -69,7 +69,7 @@ export function ButtonSideMenu({}: ButtonSideMenuProps) {
       <div className={classButton}>
         <button className="button-side-menu">
           <DynamicIcon icon="MoreDefault" theme={theme} />
-          More
+          <Link to="/*">More</Link>
         </button>
       </div>
     </>
