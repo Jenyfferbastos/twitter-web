@@ -9,7 +9,6 @@
 - `Login`: Validação de login.
 - `LocalStorage`: Armazenamento de de dados de login no LocalStorage.
 - `Logout`: Botão de logout no canto esquerdo inferior. Contém ícone de reticências.
-- `LocalStorage`: Informação de acesso do usuário é armazenado no localStorage(memória) do seu navegador. Podendo ser excluído caso o usuário confirme o pop-up de excluir os dados ao encerrar a sessão.
 - `Botões`: Botões que não possuem correspondência levam para página de erro 404.
 ## Rodando localmente
 
